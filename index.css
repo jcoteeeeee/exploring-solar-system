@@ -1,1 +1,37 @@
-    
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-content; 
+} 
+
+header{
+    display: flex;  
+    flex-direction: column; 
+    background-color: rgb(4, 4, 62); 
+}   
+
+.logo-container{
+    display: flex; 
+    justify-content: center;  
+    padding: 10px; 
+    margin-bottom: 5px; 
+}  
+
+.logo{
+    font-family: Copperplate Gothic Light; 
+    color: white; 
+}
+
+nav{
+    display: flex; 
+    justify-content: space-around; 
+    border-top: 1px solid white; 
+    padding: 10px; 
+} 
+
+.nav-link{
+    color: white; 
+    text-decoration: none; 
+    font-family: Calisto MT;   
+}
+
