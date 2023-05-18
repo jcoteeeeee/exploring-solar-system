@@ -30,9 +30,13 @@ nav{
 } 
 
 .nav-link{
-    color: white; 
+    color: rgb(199, 192, 192); 
     text-decoration: none; 
     font-family: Calisto MT;   
+} 
+
+.nav-link:hover{
+    color: white; 
 } 
 
 /* Main content */ 
@@ -80,3 +84,31 @@ nav{
     font-size: 30px; 
     padding: 20px; 
 }  
+
+/* solar system description */  
+#descrip-container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+#descrip-title{ 
+    color: rgb(1, 1, 32);   
+    font-family: Metropolis, Helvetica, Arial, sans-serif;   
+    font-size: 25px; 
+    padding: 10px; 
+    margin: 10px; 
+} 
+
+#descrips{
+    display: flex; 
+    flex-direction: column; 
+}  
+
+.descrip-par{  
+    color: rgb(1, 1, 32);   
+    font-family: Metropolis, Helvetica, Arial, sans-serif; 
+    padding: 15px 150px; 
+    line-height: 1.5em; 
+    font-size: 20px; 
+}
