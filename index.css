@@ -111,4 +111,10 @@ nav{
     padding: 15px 150px; 
     line-height: 1.5em; 
     font-size: 20px; 
+} 
+
+/* planet bio */  
+#planet-bios{
+    background-color: black; 
+    color: white; 
 }
