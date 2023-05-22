@@ -21,7 +21,11 @@ header{
     justify-content: center;  
     padding: 10px; 
     margin-bottom: 5px; 
-}  
+}   
+
+.logo-container a{
+    text-decoration: none; 
+}
 
 .logo{
     font-family: Copperplate Gothic Light; 

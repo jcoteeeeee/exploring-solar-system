@@ -19,7 +19,9 @@ const request = async () => {
                 const planetName = document.createElement('a') 
                 planetName.textContent = planet.name 
                 planetName.className = 'planet-name' // created a tag 'planetName' and gave it class name 'planet-name' 
-                planetName.href= '' 
+                const planNameLC = planet.name.toLowerCase() // this variable is to make the planet's names start with a lower case letter 
+                // to be used to set the href value for each planet below (url doesn't work if planet's name starts with upper case letter) 
+                planetName.href= `./${planNameLC}.html` 
 
                 const planetPar = document.createElement('p')  
                 planetPar.textContent = planet.bio 
