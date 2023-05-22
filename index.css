@@ -4,10 +4,13 @@
     box-sizing: border-content; 
 } 
 
-header{
+header{ 
+    position: relative; 
     display: flex;  
     flex-direction: column; 
     background-color: rgb(1, 1, 32); 
+    /* position: sticky;  */
+    /* top: 200px;  */
 }   
 
 .logo-container{
@@ -113,8 +116,47 @@ nav{
     font-size: 20px; 
 } 
 
-/* planet bio */  
+/* planet bio   */
 #planet-bios{
-    background-color: black; 
+    /* background-color: black;   */
     color: white; 
+    background-image: url('https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBza3l8ZW58MHx8MHx8fDA%3D&w=1000&q=80'); 
+    display: flex; 
+    justify-content: space-around; 
+    /* flex-direction: column; 
+    align-items: center;  */ 
+    flex-wrap: wrap; 
+} 
+
+.planet-card{
+    margin: 20px; 
+    width: 500px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: rgb(25, 25, 26); 
+    opacity: 0.8; 
+} 
+
+.planet-img{
+    width: 200px; 
+    height: 200px; 
+    border: 2px solid white; 
+    border-radius: 5px; 
+} 
+
+.planet-name{
+    color: white; 
+    text-decoration: none; 
+    font-size: 25px;   
+    font-family: Metropolis, Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+    margin: 10px; 
+}
+
+.planet-par{
+    font-size: 20px; 
+    font-family: Metropolis, Helvetica, Arial, sans-serif;     
+    line-height: 1.5rem; 
+    margin: 20px 10px; 
 }
