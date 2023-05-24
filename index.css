@@ -170,6 +170,22 @@ nav{
     margin: 20px 10px; 
 } 
 
+/* ____________________________________________________ */
+/* All planets */ 
+.featured{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+}
+
+.planet-title{
+    color: white; 
+    font-size: 60px; 
+    letter-spacing: .5rem; 
+    font-family: Metropolis, Helvetica,Arial,sans-serif; 
+}
+
+
 /* ____________________________________________________ */ 
 /* Mercury */ 
 #mercury-featured{
