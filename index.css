@@ -142,14 +142,16 @@ nav{
     flex-direction: column; 
     align-items: center; 
     background-color: rgb(25, 25, 26); 
-    opacity: 0.8; 
+    opacity: 0.8;   
+    /* box-shadow: 10px 10px 20px rgb(131, 129, 129);     */
 } 
 
 .planet-img{
     width: 200px; 
     height: 200px; 
-    border: 2px solid white; 
+    /* border: 1px solid white;  */
     border-radius: 5px; 
+    box-shadow: 5px 5px 100px rgb(150, 147, 147); 
 } 
 
 .planet-name{
@@ -166,4 +168,61 @@ nav{
     font-family: Metropolis, Helvetica, Arial, sans-serif;     
     line-height: 1.5rem; 
     margin: 20px 10px; 
+} 
+
+/* ____________________________________________________ */ 
+/* Mercury */ 
+#mercury-featured{
+    background-image: url('https://www.nasa.gov/images/content/208698main_merc_horizon.jpg'); 
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Venus */ 
+#venus-featured{
+    background-image: url('https://solarsystem.nasa.gov/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSXBNVE01TWpjek5UTXRNRGs0WXkwMFl6Y3dMV0ZqTnpNdE5UTXdaV05qT0RJeE1ETmlCam9HUlZRNkVHUnBjM0J2YzJsMGFXOXVTU0pYYVc1c2FXNWxPeUJtYVd4bGJtRnRaVDBpVm1WdWRYTk5ZV0YwVFc5dWN6RXlNREIzTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25WbVZ1ZFhOTllXRjBUVzl1Y3pFeU1EQjNMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--7c741df37920b9bd82c38ba3a27ba13e5fb28199/VenusMaatMons1200w.jpg'); 
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Earth */ 
+#earth-featured{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80f84b63-3f45-4367-ac2d-01cc319e0d75/d1d14ih-af8a3f1d-95a5-4cae-98b0-3d28ed0dbb1c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZjg0YjYzLTNmNDUtNDM2Ny1hYzJkLTAxY2MzMTllMGQ3NVwvZDFkMTRpaC1hZjhhM2YxZC05NWE1LTRjYWUtOThiMC0zZDI4ZWQwZGJiMWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aL_Rvx5Ma1Vn4Yk3OlOEwpdRsHXf6RywrIl0ITCg-hU'); 
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Mars */  
+#mars-featured{
+    background-image: url('https://www.spaceflightinsider.com/wp-content/uploads/2015/10/Mars-Nasa-1.jpg'); 
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Jupiter */  
+#jupiter-featured{
+    background-image: url('https://www.sciencefriday.com/wp-content/uploads/2017/05/Thumb.jpg'); 
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Saturn */  
+#saturn-featured{
+    background-image: url('https://media.istockphoto.com/id/1200463149/photo/artist-view-of-the-saturn-planet-and-its-moon-titan.jpg?s=170667a&w=0&k=20&c=G6N2kOi2XiNStQeZB0YRpOJm4YTBsZvFUz085Uc8ypk=');  
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Uranus */ 
+#uranus-featured{
+    background-image: url('https://static.wikia.nocookie.net/masseffect/images/e/ec/Uranus.png/revision/latest?cb=20140921175827');  
+    background-size: cover; 
+    height: 600px; 
+} 
+
+/* Neptune */  
+#neptune-featured{
+    background-image: url('https://www.asc-csa.gc.ca/images/astronomie/systeme-solaire/neptune-2.jpg'); 
+    background-size: cover; 
+    height: 600px; 
 }
