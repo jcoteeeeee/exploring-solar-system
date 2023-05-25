@@ -35,4 +35,44 @@ const request = async () => {
     }
 }  
 
-request()  
+request()    
+
+// GET request for mercury's gallery section 
+const getMercury = async () => {  
+    const mgContainer= document.querySelector('#mercury-gallery-container')
+    try{
+        const response = await fetch('http://localhost:3000/mercury-images')  
+        if (response.ok){
+            const respJson = await response.json() 
+            respJson.forEach(mercury => {
+                const mercuryImg = document.createElement('img')  
+                mercuryImg.src = mercury.image 
+                mgContainer.append(mercuryImg) 
+            })
+        }
+    } catch(error){
+        console.log(error)  
+    }
+}  
+
+getMercury() 
+
+// GET request for venus' photo gallery 
+const getVenus = async () => { 
+    const vgContainer = document.querySelector('#venus-gallery-container')
+    try{
+        const response = await fetch('http://localhost:3000/venus-images') 
+        if (response.ok){
+            const respJson = await response.json() 
+            respJson.forEach(venus => {
+                const venusImg = document.createElement('img') 
+                venusImg.src = venus.image 
+                vgContainer.append(venusImg)  
+            })  
+        }
+    } catch(error){
+        console.log(error)  
+    }
+} 
+
+getVenus() 
