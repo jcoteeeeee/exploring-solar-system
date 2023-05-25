@@ -4,7 +4,7 @@ console.log('hello')
 const request = async () => {
     const planetBios = document.querySelector('#planet-bios')
     try{
-        const response = await fetch('http://localhost:3000/Planets')  
+        const response = await fetch('http://localhost:3000/planets')  
         if (response.ok){
             const jsonResp = await response.json() 
             jsonResp.forEach((planet) => { 
