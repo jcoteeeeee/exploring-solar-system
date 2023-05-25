@@ -1,63 +1,217 @@
 {
-    "Planets": [
+    "planets": [
             {
-                "id": 0,
+                "id": 1,
                 "name": "Mercury",
                 "image": "./bio-images/mercury.jpg",
                 "bio": "Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial planet with a heavily cratered surface due to the planet having no geological activity and an extremely tenuous atmosphere (called an exosphere). Despite being the smallest planet in the Solar System with a mean diameter of 4,880 km (3,030 mi), 38% of that of Earth's, Mercury is dense enough to have roughly the same surface gravity as Mars."
             },  
         
             {
-                "id": 1, 
+                "id": 2, 
                 "name": "Venus",    
                 "image": "./bio-images/venus.png", 
                 "bio": "Venus is the second planet from the Sun. It is a rocky planet with a mass and size narrowly second in the Solar System to Earth, and with an atmosphere, which is the thickest of all four rocky planets of the Solar System and substantially thicker than Earth's. Its orbit is the next closest to Earth's, orbiting the Sun inferior inside of Earth's orbit, appearing (like Mercury) in Earth's sky always close to the Sun as either a 'morning star' or 'evening star'."
             },  
 
             {
-                "id": 2,
+                "id": 3,
                 "name": "Earth", 
                 "image": "./bio-images/earth.jpg", 
                 "bio": "Earth is the third planet from the Sun and the only place known in the universe where life has originated and found habitability. While Earth may not contain the largest volumes of water in the Solar System, only Earth sustains liquid surface water, extending over 70.8% of the planet with its ocean, making it an ocean world. The polar regions currently retain most of all other water with large sheets of ice covering ocean and land, dwarfing Earth's groundwater, lakes, rivers and atmospheric water."
             }, 
 
             {
-                "id": 3,
+                "id": 4,
                 "name": "Mars", 
                 "image": "./bio-images/mars.jpg",  
                 "bio": "Mars is the fourth planet and the furthest terrestrial planet from the Sun. The reddish color of its surface is due to finely grained iron(III) oxide dust in the soil, giving it the nickname `the Red Planet`. There is a sharp contrast between the two Martian hemispheres: the northern hemisphere is on average flatter and smoother than the southern hemisphere. The planet's two poles are covered by water and carbon dioxide ice caps."
             }, 
 
             {
-                "id": 4,
+                "id": 5,
                 "name": "Jupiter", 
                 "image": "./bio-images/jupiter.jpg",  
                 "bio": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times."  
             }, 
 
             {
-                "id": 5,
+                "id": 6,
                 "name": "Saturn", 
                 "image": "./bio-images/saturn.jpg", 
                 "bio": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth, but is over 95 times more massive."
             }, 
 
             {
-                "id": 6,
+                "id": 7,
                 "name": "Uranus", 
                 "image": "./bio-images/uranus.jpg", 
                 "bio": "Uranus is the seventh planet from the Sun and is a gaseous cyan ice giant. Most of Uranus is made out of water, ammonia, and methane in a supercritical phase of matter, which in astronomy is called 'ice' or volatiles. The planet's atmosphere has a complex layered cloud structure and has the lowest minimum temperature of 49 K (−224 °C; −371 °F) out of all Solar System's planets."  
             }, 
 
             {
-                "id": 7,
+                "id": 8,
                 "name": "Neptune", 
                 "image": "./bio-images/neptune.jpg", 
                 "bio": "Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus. Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere."  
             }  
     ], 
 
-    "Mercury-Images": {
+    "mercury-images": [ 
+        {
+            "id": 1, 
+            "image": "./gallery-images/mercury1.jpg"
+        }, 
 
-    }
+        {
+            "id": 2,
+            "image":"./gallery-images/mercury2.webp"
+        }, 
+
+        {
+            "id": 3,
+            "image": "./gallery-images/mercury3.jpg"
+        }, 
+
+        {
+            "id": 4,
+            "image": "./gallery-images/mercury4.webp"
+        } 
+    ], 
+
+    "venus-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/venus1.jpg"
+        }, 
+
+        {
+            "id": 2,
+            "image": "./gallery-images/venus2.jpg"
+        }, 
+
+        {
+            "id": 3,
+            "image": "./gallery-images/venus3.jpg"
+        }, 
+
+        {
+            "id": 4,
+            "image": "./gallery-images/venus4.jpg"
+        } 
+    ], 
+
+    "earth-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/earth1.jpg"
+        },
+        {
+            "id": 2,
+            "image": "./gallery-images/earth2.jpg"
+        },
+        {
+            "id": 3,
+            "image": "./gallery-images/earth3.jpg"  
+        },
+        {
+            "id": 4,
+            "image": "./gallery-images/earth4.jpg"  
+        }
+    ], 
+
+    "mars-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/mars1.jpg"
+        },
+        {
+            "id": 2,
+            "image": "./gallery-images/mars2.jpg"
+        },
+        {
+            "id": 3,
+            "image": "./gallery-images/mars3.jpg"
+        },
+        {
+            "id": 4,
+            "image": "./gallery-images/mars4.jpg"  
+        }
+    ], 
+
+    "jupiter-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/jupiter1.jpg"
+        },
+        {
+            "id": 2,
+            "image":    "./gallery-images/jupiter2.jpg"
+        },
+        {
+            "id": 3,
+            "image": "./gallery-images/jupiter3.jpg"
+        },
+        {
+            "id": 4,
+            "image": "./gallery-images/jupiter4.jpg"  
+        }
+    ], 
+
+    "saturn-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/saturn1.jpg"
+        },
+        {
+            "id": 2,
+            "image": "./gallery-images/saturn2.jpg"   
+        },
+        {
+            "id": 3,  
+            "image": "./gallery-images/saturn3.jpg"  
+        },
+        {
+            "id": 4,
+            "image": "./gallery-images/saturn4.jpg"  
+        }
+    ], 
+
+    "uranus-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/uranus1.jpg"
+        },
+        {
+            "id": 2,
+            "image": "./gallery-images/uranus2.jpg"  
+        },
+        {
+            "id": 3,
+            "image": "./gallery-images/uranus3.jpg"  
+        },
+        {
+            "id": 4,
+            "image": "./gallery-images/uranus4.jpg"  
+        }
+    ], 
+
+    "neptune-images": [
+        {
+            "id": 1,
+            "image": "./gallery-images/neptune1.jpg"  
+        },
+        {
+            "id": 2,
+            "image": "./gallery-images/neptune2.jpg"  
+        },
+        {
+            "id": 3,
+            "image": "./gallery-images/neptune3.jpg"  
+        },
+        {
+            "id": 4,
+            "image": "./gallery-images/neptune4.jpg"  
+        }
+    ]  
 }

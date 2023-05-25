@@ -230,6 +230,10 @@ nav{
     font-family: Metropolis, Helvetica, Arial, sans-serif;     
     line-height: 1.5rem; 
     margin: 20px 10px; 
+} 
+
+.video-container{
+    background-color: rgb(233, 223, 223); 
 }
 
 
