@@ -4,17 +4,28 @@
     box-sizing: border-content; 
 } 
 
+body{
+    overflow: overlay; 
+}
+
 header{ 
-    display: flex;  
-    flex-direction: column; 
+    /* display: flex;  
+    flex-direction: column;  */
     background-color: rgb(1, 1, 32);   
     width: 100%; 
-    position: fixed;  
-    z-index: 1;  
+    position: sticky; 
+    top: 0px;   
+    z-index: 1;   
     /* this doesn't have a height, so how do you discern how low to position next element from the top? */
-    /* position: sticky;  */
-    /* top: 200px;  */ 
+    /* position: sticky;   */
+    /* position: -webkit-sticky;  */
+    /* height: 60px;  */ 
 }   
+
+main{
+    /* overflow: hidden; */ 
+    display: block; 
+} 
 
 .logo-container{
     display: flex; 
@@ -52,22 +63,22 @@ nav{
 /* Main content */ 
 /* Night sky image */ 
 #night-sky{
-    background-image: url('./images/night-sky.jpeg'); 
+    background-image: url('./background-images/night-sky.jpeg'); 
     background-size: cover; 
     background-position: center; 
     width: 100%; 
     height: 600px; 
     display: flex; 
     flex-direction: column; 
-    justify-content: space-around; 
-}
+    justify-content: center;  
+} 
 
 .image-text{
     width: 100%; 
     display: flex; 
     justify-content: center; 
     align-items: center;  
-    margin-top: 250px; 
+    /* margin-top: 250px;  */  
 } 
 
 .image-text p{
@@ -76,6 +87,7 @@ nav{
     font-family: Calisto MT; 
     font-weight: bold; 
     padding: 5px; 
+    justify-self: center; 
 } 
 
 #solar-bio{
@@ -83,10 +95,11 @@ nav{
     background-color: black; 
     display: flex; 
     align-items: flex-end; 
-    height: 15  0px; 
+    height: 15 0px; 
     width: 100%; 
     justify-content: space-around; 
     opacity: .8; 
+    justify-self: end;
 }  
 
 .solar-fact{
@@ -118,7 +131,8 @@ nav{
 .descrip-par{  
     color: rgb(1, 1, 32);   
     font-family: Metropolis, Helvetica, Arial, sans-serif; 
-    padding: 15px 150px; 
+    margin: 15px 150px; 
+    padding: 5px; 
     line-height: 1.5em; 
     font-size: 20px; 
 } 
@@ -183,6 +197,39 @@ nav{
     font-size: 60px; 
     letter-spacing: .5rem; 
     font-family: Metropolis, Helvetica,Arial,sans-serif; 
+} 
+
+.info{
+    display: flex; 
+    flex-direction: column; 
+    align-content: center; 
+    margin: 15px 150px; 
+    padding: 5px; 
+} 
+
+.info-title{
+    color: rgb(1, 1, 32);   
+    font-family: Metropolis, Helvetica, Arial, sans-serif;   
+    font-size: 25px; 
+    padding: 10px; 
+    margin: 10px;   
+    /* display: flex; 
+    justify-content: center;  */ 
+    text-align: center; 
+} 
+
+.par-container{
+    color: rgb(1, 1, 32); 
+    font-family: Metropolis, Helvetica, Arial, sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.info-par{
+    font-size: 20px; 
+    font-family: Metropolis, Helvetica, Arial, sans-serif;     
+    line-height: 1.5rem; 
+    margin: 20px 10px; 
 }
 
 
