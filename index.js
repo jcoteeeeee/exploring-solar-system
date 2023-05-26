@@ -198,4 +198,73 @@ const getNeptune = async () => {
 
 getNeptune()  
 
-// ________________________________________________ 
+// _______________________________________________________________________________________________________________ 
+
+// adding event listener to mercuryForm to be able to add image to mercury gallery via POST request 
+const mercuryForm = document.querySelector('#mercury-form') 
+mercuryForm.addEventListener('submit', (e) => {
+    e.preventDefault() 
+    const mercuryPost = async () => {
+        try {
+            const response = await fetch('http://localhost:3000/mercury-images', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    image: mercuryForm.image.value
+                })
+            })
+            if (response.ok) {
+                const respJson = await response.json()
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    mercuryPost() 
+})   
+ 
+// adding event listener to venusForm to be able to add image to venus gallery via POST request 
+const venusForm = document.querySelector('#venus-form') 
+const venusPost = async () => {
+    try {
+        const response = await fetch('http://localhost:3000/venus-images', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                image: venusForm.image.value
+            })
+        })
+        if (response.ok) {
+            const respJson = await response.json()
+        }
+    } catch (error) {
+        console.log(error)
+    }
+} 
+
+venusForm.addEventListener('submit', (e) => { 
+    console.log('submit')
+    e.preventDefault() 
+    venusPost()  
+})  
+
+// adding event listener to earthForm to be able to add image to earth gallery via POST request  
+const earthForm = document.querySelector('#earth-form') 
+earthForm.addEventListener('submit', (e) => {
+    const postEarth = async () => {
+        try{
+            const response = await fetch('http://localhost:3000/earth-images', {
+                method: 'POST', 
+                headers: {'Content-Type': 'application/json'}, 
+                body: JSON.stringify({
+                    image: earthForm.image.value  
+                }) 
+            })  
+            if (response.ok){
+                const respJson = await response.json() 
+            }
+        } catch(error){
+            console.log(error) 
+        }
+    }
+})
