@@ -244,6 +244,14 @@ nav{
     font-family: Metropolis, Helvetica, Arial, sans-serif;     
     padding: 5px; 
     margin: 5px; 
+} 
+
+.add-img-container{
+    margin: 5px; 
+} 
+
+.img-input{
+    margin: 10px; 
 }
 
 /* ____________________________________________________ */ 
