@@ -1,5 +1,4 @@
 console.log('hello')    
-
 // GET request for planet bio section on hoomepage 
 const request = async () => {
     const planetBios = document.querySelector('#planet-bios')
@@ -47,6 +46,7 @@ const getMercury = async () => {
             respJson.forEach(mercury => {
                 const mercuryImg = document.createElement('img')  
                 mercuryImg.src = mercury.image 
+                mercuryImg.className = 'gallery-img' 
                 mgContainer.append(mercuryImg) 
             })
         }
@@ -67,6 +67,7 @@ const getVenus = async () => {
             respJson.forEach(venus => {
                 const venusImg = document.createElement('img') 
                 venusImg.src = venus.image 
+                venusImg.className = 'gallery-img' 
                 vgContainer.append(venusImg)  
             })  
         }
@@ -87,6 +88,7 @@ const getEarth = async () => {
             respJson.forEach(earth => {
                 const earthImg = document.createElement('img') 
                 earthImg.src = earth.image  
+                earthImg.className = 'gallery-img'  
                 egContainer.append(earthImg) 
             })
         }
@@ -107,6 +109,7 @@ const getMars = async () => {
             respJson.forEach(mars => {
                 marsImg = document.createElement('img')  
                 marsImg.src = mars.image  
+                marsImg.className = 'gallery-img'  
                 mgContainer.append(marsImg)  
             })
         }
@@ -127,6 +130,7 @@ const getJupiter = async () => {
             respJson.forEach(jupiter => {
                 const jupiterImg = document.createElement('img')  
                 jupiterImg.src = jupiter.image   
+                jupiterImg.className = 'gallery-img' 
                 jgContainer.append(jupiterImg)  
             })
         } 
@@ -147,6 +151,7 @@ const getSaturn = async () => {
             respJson.forEach(saturn => {
                 const saturnImg = document.createElement('img') 
                 saturnImg.src = saturn.image 
+                saturnImg.className = 'gallery-img' 
                 sgContainer.append(saturnImg)  
             })
         }
@@ -167,7 +172,8 @@ const getUranus = async () => {
             const respJson = await response.json()
             respJson.forEach(uranus => {
                 const uranusImg = document.createElement('img')
-                uranusImg.src = uranus.image
+                uranusImg.src = uranus.image 
+                uranusImg.className = 'gallery-img' 
                 ugContainer.append(uranusImg)
             })
         }
@@ -187,7 +193,8 @@ const getNeptune = async () => {
             const respJson = await response.json()
             respJson.forEach(neptune => {
                 const neptuneImg = document.createElement('img')
-                neptuneImg.src = neptune.image
+                neptuneImg.src = neptune.image  
+                neptuneImg.className = 'gallery-img'  
                 ngContainer.append(neptuneImg)
             })
         }
@@ -202,6 +209,7 @@ getNeptune()
 
 // adding event listener to mercuryForm to be able to add image to mercury gallery via POST request 
 const mercuryForm = document.querySelector('#mercury-form') 
+console.log(mercuryForm) 
 mercuryForm.addEventListener('submit', (e) => {
     e.preventDefault() 
     const mercuryPost = async () => {
@@ -223,8 +231,9 @@ mercuryForm.addEventListener('submit', (e) => {
     mercuryPost() 
 })   
  
-// adding event listener to venusForm to be able to add image to venus gallery via POST request 
+// adding event listener to venusForm to be able to add image to venus gallery via POST request  
 const venusForm = document.querySelector('#venus-form') 
+console.log(venusForm)
 const venusPost = async () => {
     try {
         const response = await fetch('http://localhost:3000/venus-images', {
@@ -242,11 +251,12 @@ const venusPost = async () => {
     }
 } 
 
-venusForm.addEventListener('submit', (e) => { 
-    console.log('submit')
-    e.preventDefault() 
-    venusPost()  
-})  
+    venusForm.addEventListener('submit', (e) => { 
+        console.log('submit')
+        e.preventDefault() 
+        venusPost()  
+    })    
+
 
 // adding event listener to earthForm to be able to add image to earth gallery via POST request  
 const earthForm = document.querySelector('#earth-form') 
