@@ -117,7 +117,8 @@ nav{
 
 #descrip-title{ 
     color: rgb(1, 1, 32);   
-    font-family: Metropolis, Helvetica, Arial, sans-serif;   
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;    */  
+    font-family: Calisto MT; 
     font-size: 25px; 
     padding: 10px; 
     margin: 10px; 
@@ -130,7 +131,8 @@ nav{
 
 .descrip-par{  
     color: rgb(1, 1, 32);   
-    font-family: Metropolis, Helvetica, Arial, sans-serif; 
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;  */  
+    font-family: Calisto MT; 
     margin: 15px 150px; 
     padding: 5px; 
     line-height: 1.5em; 
@@ -172,14 +174,16 @@ nav{
     color: white; 
     text-decoration: none; 
     font-size: 25px;   
-    font-family: Metropolis, Helvetica, Arial, sans-serif; 
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;  */  
+    font-family: Calisto MT; 
     font-weight: bold; 
     margin: 10px; 
 }
 
 .planet-par{
     font-size: 20px; 
-    font-family: Metropolis, Helvetica, Arial, sans-serif;     
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;      */  
+    font-family: Calisto MT; 
     line-height: 1.5rem; 
     margin: 20px 10px; 
 } 
@@ -196,7 +200,8 @@ nav{
     color: white; 
     font-size: 60px; 
     letter-spacing: .5rem; 
-    font-family: Metropolis, Helvetica,Arial,sans-serif; 
+    /* font-family: Metropolis, Helvetica,Arial,sans-serif;   */ 
+    font-family: Calisto MT; 
 } 
 
 .info{
@@ -209,25 +214,28 @@ nav{
 
 .info-title{
     color: rgb(1, 1, 32);   
-    font-family: Metropolis, Helvetica, Arial, sans-serif;   
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;    */ 
+    font-family: Calisto MT; 
     font-size: 25px; 
     padding: 10px; 
     margin: 10px;   
     /* display: flex; 
     justify-content: center;  */ 
     text-align: center; 
+    border-bottom: 5px double rgb(1, 1, 32); 
 } 
 
 .par-container{
     color: rgb(1, 1, 32); 
-    font-family: Metropolis, Helvetica, Arial, sans-serif; 
     display: flex; 
     flex-direction: column; 
+    border-bottom: 5px double rgb(1, 1, 32); 
 } 
 
 .info-par{
     font-size: 20px; 
-    font-family: Metropolis, Helvetica, Arial, sans-serif;     
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;      */  
+    font-family: Calisto MT; 
     line-height: 1.5rem; 
     margin: 20px 10px; 
 } 
@@ -244,7 +252,8 @@ nav{
 .photo-gallery h1{ 
     color: white; 
     font-size: 40px; 
-    font-family: Metropolis, Helvetica, Arial, sans-serif;     
+    /* font-family: Metropolis, Helvetica, Arial, sans-serif;      */  
+    font-family: Calisto MT; 
     padding: 15px 5px; 
     margin: 20px 5px; 
 } 
@@ -264,9 +273,9 @@ nav{
 }  
 
 .add-img-container{ 
-    color: rgb(1, 1, 32); 
-    background-color: white; 
-    height: 140px; 
+    color: white; 
+    background-color: rgb(1, 1, 32); 
+    height: 120px; 
     width: 300px; 
     margin: 50px 5px 20px; 
     display: flex; 
@@ -290,10 +299,10 @@ nav{
 
 .gallery-btn{
     color: white; 
-    background: rgb(1, 1, 32);
+    background-color: rgb(1, 1, 32);
     height: 20px; 
-    width: 80px;  
-    border: none; 
+    width: px;  
+    border: 1px solid white; 
     border-radius: 5px; 
     margin: 0px 10px; 
 } 
