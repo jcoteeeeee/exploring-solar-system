@@ -141,7 +141,7 @@ nav{
 #planet-bios{
     /* background-color: black;   */
     color: white; 
-    background-image: url('https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBza3l8ZW58MHx8MHx8fDA%3D&w=1000&q=80'); 
+    background-image: url('./background-images/background-sky.jpg'); 
     display: flex; 
     justify-content: space-around; 
     /* flex-direction: column; 
@@ -156,7 +156,7 @@ nav{
     flex-direction: column; 
     align-items: center; 
     background-color: rgb(25, 25, 26); 
-    opacity: 0.8;   
+    /* opacity: 0.8;    */
     /* box-shadow: 10px 10px 20px rgb(131, 129, 129);     */
 } 
 
@@ -233,25 +233,75 @@ nav{
 } 
 
 .photo-gallery{
-    background-color: rgb(228, 221, 221); 
+    /* background-color: rgb(228, 221, 221);  */
+    background-image: url("./background-images/background-sky.jpg"); 
+    /* background-size: cover;  */
     display: flex; 
     flex-direction: column; 
     align-items: center; 
 } 
 
-.photo-gallery h1{
+.photo-gallery h1{ 
+    color: white; 
     font-size: 40px; 
     font-family: Metropolis, Helvetica, Arial, sans-serif;     
-    padding: 5px; 
-    margin: 5px; 
+    padding: 15px 5px; 
+    margin: 20px 5px; 
 } 
 
-.add-img-container{
-    margin: 5px; 
-} 
+.gallery-container{
+    display: flex; 
+    justify-content: start; 
+    flex-wrap: wrap; 
+}
 
-.img-input{
+.gallery-img{
+    height: 300px; 
+    width: 300px; 
+    margin: 5px 10px; 
+    border-radius: 20px;  
+    box-shadow: 5px 5px 100px rgb(150, 147, 147); 
+}  
+
+.add-img-container{ 
+    color: rgb(1, 1, 32); 
+    background-color: white; 
+    height: 140px; 
+    width: 300px; 
+    margin: 50px 5px 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-content: center; 
+    justify-content: center; 
+    border-radius: 20px; 
+}  
+
+.add-img-container h2{
     margin: 10px; 
+}
+
+.img-input{  
+    height: 20px; 
+    width: 180px; 
+    margin: 10px; 
+    border: 2px solid rgb(1, 1, 32); 
+    border-radius: 5px; 
+} 
+
+.gallery-btn{
+    color: white; 
+    background: rgb(1, 1, 32);
+    height: 20px; 
+    width: 80px;  
+    border: none; 
+    border-radius: 5px; 
+    margin: 0px 10px; 
+} 
+
+.gallery-btn:hover{
+    color: rgb(1, 1, 32); 
+    background-color: white;  
+    border: 2px solid rgb(1, 1, 32); 
 }
 
 /* ____________________________________________________ */ 

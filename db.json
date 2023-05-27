@@ -64,22 +64,17 @@
     },
     {
       "id": 4,
-      "image": "./gallery-images/mercury4.webp"
+      "image": "./gallery-images/mercury4.jpg"
     },
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
       "id": 5
     },
     {
-      "image": "",
-      "id": 6
-    },
-    {
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
-      "id": 7
-    }
-  ], 
-
+      "id": 6
+    } 
+  ],
   "venus-images": [
     {
       "id": 1,
@@ -96,9 +91,8 @@
     {
       "id": 4,
       "image": "./gallery-images/venus4.jpg"
-    } 
-  ], 
-
+    }
+  ],
   "earth-images": [
     {
       "id": 1,
@@ -116,8 +110,7 @@
       "id": 4,
       "image": "./gallery-images/earth4.jpg"
     }
-  ], 
-
+  ],
   "mars-images": [
     {
       "id": 1,
@@ -135,8 +128,7 @@
       "id": 4,
       "image": "./gallery-images/mars4.jpg"
     }
-  ], 
-
+  ],
   "jupiter-images": [
     {
       "id": 1,
@@ -154,8 +146,7 @@
       "id": 4,
       "image": "./gallery-images/jupiter4.jpg"
     }
-  ], 
-
+  ],
   "saturn-images": [
     {
       "id": 1,
@@ -173,8 +164,7 @@
       "id": 4,
       "image": "./gallery-images/saturn4.jpg"
     }
-  ], 
-
+  ],
   "uranus-images": [
     {
       "id": 1,
@@ -192,8 +182,7 @@
       "id": 4,
       "image": "./gallery-images/uranus4.jpg"
     }
-  ], 
-  
+  ],
   "neptune-images": [
     {
       "id": 1,
