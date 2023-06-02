@@ -4,6 +4,11 @@
     box-sizing: border-content; 
 } 
 
+:root{
+    --navy-blue: rgb(1, 1, 32); 
+    --main-color: var(--navy-blue); 
+}
+
 body{
     overflow: overlay; 
 }
@@ -11,9 +16,9 @@ body{
 header{ 
     /* display: flex;  
     flex-direction: column;  */
-    background-color: rgb(1, 1, 32);   
+    background-color: var(--main-color); 
     width: 100%; 
-    position: sticky; 
+    /* position: sticky;  */
     top: 0px;   
     z-index: 1;   
     /* this doesn't have a height, so how do you discern how low to position next element from the top? */
@@ -54,7 +59,7 @@ nav{
     color: rgb(199, 192, 192); 
     text-decoration: none; 
     font-family: Calisto MT;   
-} 
+}   
 
 .nav-link:hover{
     color: white; 
@@ -63,7 +68,8 @@ nav{
 /* Main content */ 
 /* Night sky image */ 
 #night-sky{
-    background-image: url('./background-images/night-sky.jpeg'); 
+    background-image: url('./background-images/night-sky.jpeg');   
+    background-position: no-repeat; 
     background-size: cover; 
     background-position: center; 
     width: 100%; 
@@ -78,7 +84,8 @@ nav{
     display: flex; 
     justify-content: center; 
     align-items: center;  
-    /* margin-top: 250px;  */  
+    /* margin-top: 250px;  */    
+    text-shadow: 2px 2px black; 
 } 
 
 .image-text p{
@@ -116,7 +123,7 @@ nav{
 } 
 
 #descrip-title{ 
-    color: rgb(1, 1, 32);   
+    color: var(--main-color); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;    */  
     font-family: Calisto MT; 
     font-size: 25px; 
@@ -130,7 +137,7 @@ nav{
 }  
 
 .descrip-par{  
-    color: rgb(1, 1, 32);   
+    color: var(--main-color); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;  */  
     font-family: Calisto MT; 
     margin: 15px 150px; 
@@ -164,7 +171,7 @@ nav{
 
 .planet-img{
     width: 200px; 
-    height: 200px; 
+    height: 200px;  
     /* border: 1px solid white;  */
     border-radius: 5px; 
     box-shadow: 5px 5px 100px rgb(150, 147, 147); 
@@ -202,6 +209,7 @@ nav{
     letter-spacing: .5rem; 
     /* font-family: Metropolis, Helvetica,Arial,sans-serif;   */ 
     font-family: Calisto MT; 
+    text-shadow: 2px 2px black; 
 } 
 
 .info{
@@ -210,10 +218,11 @@ nav{
     align-content: center; 
     margin: 15px 150px; 
     padding: 5px; 
+    /* background-color: rgb(233, 233, 242);  */
 } 
 
 .info-title{
-    color: rgb(1, 1, 32);   
+    color: var(--main-color); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;    */ 
     font-family: Calisto MT; 
     font-size: 25px; 
@@ -222,11 +231,11 @@ nav{
     /* display: flex; 
     justify-content: center;  */ 
     text-align: center; 
-    border-bottom: 5px double rgb(1, 1, 32); 
+    border-bottom: 5px double rgb(1, 1, 32);   
 } 
 
 .par-container{
-    color: rgb(1, 1, 32); 
+    color: var(--main-color); 
     display: flex; 
     flex-direction: column; 
     border-bottom: 5px double rgb(1, 1, 32); 
@@ -274,7 +283,7 @@ nav{
 
 .add-img-container{ 
     color: white; 
-    background-color: rgb(1, 1, 32); 
+    background-color: var(--main-color); 
     height: 120px; 
     width: 300px; 
     margin: 50px 5px 20px; 
@@ -299,7 +308,7 @@ nav{
 
 .gallery-btn{
     color: white; 
-    background-color: rgb(1, 1, 32);
+    background-color: var(--main-color); 
     height: 20px; 
     width: px;  
     border: 1px solid white; 
@@ -308,7 +317,7 @@ nav{
 } 
 
 .gallery-btn:hover{
-    color: rgb(1, 1, 32); 
+    color: var(--main-color); 
     background-color: white;  
     border: 2px solid rgb(1, 1, 32); 
 }
@@ -368,4 +377,10 @@ nav{
     background-image: url('https://www.asc-csa.gc.ca/images/astronomie/systeme-solaire/neptune-2.jpg'); 
     background-size: cover; 
     height: 600px; 
-}
+}   
+
+/* @media only screen and (max-width: 400px){
+    .nav-link{
+        font-size: 10px; 
+    }
+}   */   
