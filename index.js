@@ -195,7 +195,7 @@ const getNeptune = async () => {
                 const neptuneImg = document.createElement('img')
                 neptuneImg.src = neptune.image  
                 neptuneImg.className = 'gallery-img'  
-                ngContainer.append(neptuneImg)
+                ngContainer.append(neptuneImg) 
             })
         }
     } catch (error) {
@@ -208,73 +208,79 @@ getNeptune()
 // _______________________________________________________________________________________________________________ 
 
 // adding event listener to mercuryForm to be able to add image to mercury gallery via POST request 
-const mercuryForm = document.querySelector('#mercury-form') 
+const mercuryForm = document.querySelector('#mercury-form')  
 console.log(mercuryForm) 
-mercuryForm.addEventListener('submit', (e) => {
-    e.preventDefault() 
-    const mercuryPost = async () => {
-        try {
-            const response = await fetch('http://localhost:3000/mercury-images', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    image: mercuryForm.image.value
+if (mercuryForm){
+    mercuryForm.addEventListener('submit', (e) => { 
+        // e.preventDefault()   no need for e.preventDefault() here. Better to have page reload and have image be added right away 
+        // e.preventDefault is more useful using react 
+        const mercuryPost = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/mercury-images', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        image: mercuryForm.image.value
+                    })
                 })
-            })
-            if (response.ok) {
-                const respJson = await response.json()
+                if (response.ok) {
+                    const respJson = await response.json()
+                }
+            } catch (error) {
+                console.log(error)
             }
-        } catch (error) {
-            console.log(error)
         }
-    }
-    mercuryPost() 
-})   
+        mercuryPost() 
+    })   
+}
  
 // adding event listener to venusForm to be able to add image to venus gallery via POST request  
 const venusForm = document.querySelector('#venus-form') 
-console.log(venusForm)
-const venusPost = async () => {
-    try {
-        const response = await fetch('http://localhost:3000/venus-images', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                image: venusForm.image.value
-            })
-        })
-        if (response.ok) {
-            const respJson = await response.json()
-        }
-    } catch (error) {
-        console.log(error)
-    }
-} 
+console.log(venusForm) 
 
-    venusForm.addEventListener('submit', (e) => { 
-        console.log('submit')
-        e.preventDefault() 
-        venusPost()  
-    })    
+if (venusForm){ 
+    venusForm.addEventListener('submit', () => {
+        const venusPost = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/venus-images', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        image: venusForm.image.value
+                    })
+                })
+                if (response.ok) {
+                    const respJson = await response.json()
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }   
+        venusPost() 
+    })
+}
 
 
 // adding event listener to earthForm to be able to add image to earth gallery via POST request  
-const earthForm = document.querySelector('#earth-form') 
-earthForm.addEventListener('submit', (e) => {
-    const postEarth = async () => {
-        try{
-            const response = await fetch('http://localhost:3000/earth-images', {
-                method: 'POST', 
-                headers: {'Content-Type': 'application/json'}, 
-                body: JSON.stringify({
-                    image: earthForm.image.value  
-                }) 
-            })  
-            if (response.ok){
-                const respJson = await response.json() 
+const earthForm = document.querySelector('#earth-form')  
+if (earthForm){
+    earthForm.addEventListener('submit', (e) => { 
+        const postEarth = async () => {
+            try{
+                const response = await fetch('http://localhost:3000/earth-images', {
+                    method: 'POST', 
+                    headers: {'Content-Type': 'application/json'}, 
+                    body: JSON.stringify({
+                        image: earthForm.image.value  
+                    }) 
+                })  
+                if (response.ok){
+                    const respJson = await response.json() 
+                }
+            } catch(error){
+                console.log(error) 
             }
-        } catch(error){
-            console.log(error) 
-        }
-    }
-})
+        } 
+        postEarth() 
+    })  
+}
