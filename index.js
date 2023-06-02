@@ -211,7 +211,7 @@ getNeptune()
 const mercuryForm = document.querySelector('#mercury-form')  
 console.log(mercuryForm) 
 if (mercuryForm){
-    mercuryForm.addEventListener('submit', (e) => { 
+    mercuryForm.addEventListener('submit', () => { 
         // e.preventDefault()   no need for e.preventDefault() here. Better to have page reload and have image be added right away 
         // e.preventDefault is more useful using react 
         const mercuryPost = async () => {
@@ -264,7 +264,7 @@ if (venusForm){
 // adding event listener to earthForm to be able to add image to earth gallery via POST request  
 const earthForm = document.querySelector('#earth-form')  
 if (earthForm){
-    earthForm.addEventListener('submit', (e) => { 
+    earthForm.addEventListener('submit', () => { 
         const postEarth = async () => {
             try{
                 const response = await fetch('http://localhost:3000/earth-images', {
@@ -283,4 +283,129 @@ if (earthForm){
         } 
         postEarth() 
     })  
-}
+} 
+
+// adding event listener to marsForm to be able to add image to mars gallery via POST request 
+const marsForm = document.querySelector('#mars-form') 
+if (marsForm){
+    marsForm.addEventListener('submit', () => {
+        const postMars = async () => {
+            try{
+                const response = await fetch('http://localhost:3000/mars-images', {
+                    method: 'POST', 
+                    headers: {'Content-Type': 'application/json'}, 
+                    body: JSON.stringify({
+                        image: marsForm.image.value 
+                    }) 
+                })  
+                if (response.ok){
+                    const respJson = await response.json() 
+                }  
+            } catch(error){
+                console.log(error) 
+            }
+        } 
+        postMars()  
+    })
+}  
+
+// adding event listener to jupiterForm to be able to add image to jupiter gallery via POST request 
+const jupiterForm = document.querySelector('#jupiter-form') 
+if (jupiterForm){  
+    jupiterForm.addEventListener('submit', () => {
+        const jupiterPost = async () => {
+            try{
+                const response = await fetch('http://localhost:3000/jupiter-images', {
+                    method: 'POST', 
+                    headers: {'Content-Type': 'application/json'}, 
+                    body: JSON.stringify({
+                        image: jupiterForm.image.value
+                    })
+                })  
+                if (response.ok){
+                    const respJson = await response.json() 
+                } 
+            } catch(error){
+                console.log(error) 
+            }
+        }   
+        jupiterPost()        
+    })
+}  
+
+// adding event listener to saturnForm to be able to add image to saturn gallery via POST request 
+const saturnForm = document.querySelector('#saturn-form') 
+console.log(saturnForm) 
+if (saturnForm) {
+    saturnForm.addEventListener('submit', () => {  
+        console.log('submit')  
+        const saturnPost = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/saturn-images', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        image: saturnForm.image.value
+                    })
+                })
+                if (response.ok) {
+                    const respJson = await response.json()
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        saturnPost()  
+    })
+}  
+
+// adding event listener to saturnForm to be able to add image to saturn gallery via POST request 
+const uranusForm = document.querySelector('#uranus-form')
+console.log(uranusForm)
+if (uranusForm) {
+    uranusForm.addEventListener('submit', () => {
+        console.log('submit')
+        const uranusPost = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/uranus-images', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        image: uranusForm.image.value
+                    })
+                })
+                if (response.ok) {
+                    const respJson = await response.json()
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        uranusPost()
+    })
+}  
+
+// adding event listener to saturnForm to be able to add image to saturn gallery via POST request 
+const neptuneForm = document.querySelector('#neptune-form')  
+if (neptuneForm) {
+    neptuneForm.addEventListener('submit', () => {
+        console.log('submit')
+        const neptunePost = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/neptune-images', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        image: neptuneForm.image.value
+                    })
+                })
+                if (response.ok) {
+                    const respJson = await response.json()
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        neptunePost()
+    })
+}   
