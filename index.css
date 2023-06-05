@@ -196,6 +196,27 @@ nav{
     font-family: Calisto MT;   
     line-height: 1.5rem; 
     margin: 20px 10px; 
+}  
+
+/* Footer */  
+footer{ 
+    background-color: var(--main-color); 
+    border-top: 2px solid white; 
+    height: 40px; 
+    position: relative;   
+    bottom: 0px;    
+} 
+
+#home-footer-nav{
+    display: flex; 
+    justify-content: space-between; 
+
+}
+
+.footer-navlink{
+    color: white; 
+    font-size: 50px; 
+    text-decoration: none; 
 } 
 
 /* ____________________________________________________ */
