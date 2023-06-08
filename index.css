@@ -206,7 +206,7 @@ nav{
 footer{ 
     background-color: var(--main-color); 
     border-top: 2px solid white; 
-    height: 40px; 
+    height: 80px; 
     position: relative;   
     bottom: 0px;    
 } 
@@ -214,14 +214,17 @@ footer{
 .footer-nav{
     display: flex; 
     justify-content: space-between; 
-
 }
 
 .footer-navlink{
-    color: white; 
+    color: rgb(168, 164, 164); 
     font-size: 50px; 
     text-decoration: none; 
 } 
+
+.footer-navlink:hover{
+    color: white; 
+}
 
 /* ____________________________________________________ */
 /* All planets */ 
