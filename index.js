@@ -1,5 +1,5 @@
 console.log('hello')    
-// GET request for planet bio section on hoomepage 
+// GET request for planet bio section on homepage 
 const request = async () => {
     const planetBios = document.querySelector('#planet-bios')
     try{
