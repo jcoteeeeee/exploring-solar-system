@@ -314,26 +314,29 @@ footer{
 
 .add-img-container{ 
     color: white; 
-    background-color: var(--main-color); 
+    /* background-color: var(--main-color);  */ 
+    /* border: 1px solid red;  */
     height: 120px; 
-    width: 300px; 
+    width: 100%; 
     margin: 50px 5px 20px; 
     display: flex; 
-    flex-direction: column; 
+    /* flex-direction: column;   */
     align-content: center; 
-    justify-content: center; 
+    justify-content: flex-end; 
     border-radius: 20px; 
 }  
 
-.add-img-container h2{
-    margin: 10px; 
+.gallery-form{
+    /* border: 1px solid red;  */
+    height: 50px; 
+    margin: 5px 20px;  
 }
 
 .img-input{  
     height: 20px; 
     width: 180px; 
     margin: 10px; 
-    border: 2px solid rgb(1, 1, 32); 
+    border: 2px solid var(--main-color); 
     border-radius: 5px; 
 } 
 
@@ -341,16 +344,18 @@ footer{
     color: white; 
     background-color: var(--main-color); 
     height: 20px; 
-    width: px;  
+    width: 70px;  
     border: 1px solid white; 
     border-radius: 5px; 
-    margin: 0px 10px; 
+    margin: 0px 2px; 
+    transition: color 0.5s ease-in, bacgkround-color 0.5s ease-in; 
 } 
 
 .gallery-btn:hover{
     color: var(--main-color); 
     background-color: white;  
     border: 2px solid rgb(1, 1, 32); 
+    cursor: pointer; 
 }
 
 /* ____________________________________________________ */ 
