@@ -77,16 +77,17 @@ nav{
     width: 100%; 
     height: 600px; 
     display: flex; 
-    flex-direction: column; 
+    /* flex-direction: column;  */
     justify-content: center;  
+    align-items: center; 
 } 
 
 .image-text{
-    width: 100%; 
+    /* width: 100%;  */
     display: flex; 
     justify-content: center; 
     align-items: center;  
-    /* margin-top: 250px;  */    
+    /* border: 1px solid red;  */
     text-shadow: 2px 2px black; 
 } 
 
@@ -96,8 +97,8 @@ nav{
     font-family: Calisto MT; 
     font-weight: bold; 
     padding: 5px; 
-    justify-self: center; 
-} 
+    text-align: center; 
+}  
 
 #solar-bio{
     margin-top: 180px; 
@@ -143,7 +144,7 @@ nav{
     color: var(--main-color); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;  */  
     font-family: Calisto MT; 
-    margin: 15px 150px; 
+    margin: 15px 10%; 
     padding: 5px; 
     line-height: 1.5em; 
     font-size: var(--par-font-size); 
@@ -174,7 +175,7 @@ nav{
 
 /* .planet-card:hover .planet-img{
     transform: scale(1.1)
-}   */
+}   */ 
 
 .planet-img{
     width: 200px; 
@@ -247,7 +248,7 @@ footer{
     display: flex; 
     flex-direction: column; 
     align-content: center; 
-    margin: 15px 150px; 
+    margin: 15px 10%; 
     padding: 5px; 
     /* background-color: rgb(233, 233, 242);  */
 } 
@@ -417,8 +418,71 @@ footer{
     height: 600px; 
 }   
 
-/* @media only screen and (max-width: 400px){
+@media only screen and (max-width: 680px){ 
+    .image-text p{
+        font-size: 40px;  
+    }   
+
     .nav-link{
-        font-size: 10px; 
+        font-size: 14px; 
+    }    
+
+    #descrip-title{ 
+        font-size: 22px; 
+        padding: 10px; 
+        margin: 10px; 
+    } 
+
+    .descrip-par{  
+    padding: 5px; 
+    line-height: 1.2em; 
+    --par-font-size: 16px; 
+    font-size: var(--par-font-size); 
+    }  
+
+    .planet-card {
+        margin: 15px;
+        width: 200px;
     }
-}   */   
+    
+    .planet-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .planet-name {
+        font-size: 20px; 
+        margin: 7px;
+    }
+    
+    .planet-par { 
+        font-size: 16px; 
+        line-height: 1.2rem;
+        margin: 15px 7px; 
+    } 
+ 
+    /* _________________________________________________________ */
+
+    .planet-title{
+        font-size: 50px; 
+    } 
+    
+    .info-title {
+        font-size: 22px;
+        padding: 7px;
+        margin: 7px;
+    }
+    
+    
+    .info-par { 
+        --par-font-size: 16px; 
+        font-size: var(--par-font-size);
+        line-height: 1.2rem;
+        margin: 15px 7px;
+    }
+
+    .gallery-img{
+    height: 220px; 
+    width: 220px; 
+    }  
+} 
