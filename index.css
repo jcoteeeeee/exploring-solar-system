@@ -287,6 +287,7 @@ footer{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    width: 100%; 
 } 
 
 .photo-gallery h1{ 
@@ -300,7 +301,7 @@ footer{
 
 .gallery-container{
     display: flex; 
-    justify-content: start; 
+    justify-content: center; 
     flex-wrap: wrap; 
 }
 
@@ -309,7 +310,8 @@ footer{
     width: 300px; 
     margin: 5px 10px; 
     border-radius: 20px;  
-    box-shadow: 5px 5px 100px rgb(150, 147, 147); 
+    border: 2px solid white; 
+    /* box-shadow: 5px 5px 100px rgb(150, 147, 147);  */
 }  
 
 .add-img-container{ 
@@ -356,7 +358,7 @@ footer{
     background-color: white;  
     border: 2px solid rgb(1, 1, 32); 
     cursor: pointer; 
-}
+} 
 
 /* ____________________________________________________ */ 
 /* Mercury */ 
