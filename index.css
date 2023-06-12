@@ -416,7 +416,41 @@ footer{
     background-image: url('https://www.asc-csa.gc.ca/images/astronomie/systeme-solaire/neptune-2.jpg'); 
     background-size: cover; 
     height: 600px; 
-}   
+}    
+
+@media only screen and (max-width: 1200px){
+     .planet-card {
+        margin: 18px;
+        width: 400px;
+    }
+    
+    .planet-img {
+        width: 175px;
+        height: 175px;
+    } 
+    
+    .planet-name {
+        font-size: 18px; 
+        margin: 8px;
+    }
+    
+    .planet-par { 
+        font-size: 18px; 
+        line-height: 1.2rem;
+        margin: 15px 7px; 
+    } 
+} 
+
+@media only screen and (max-width: 900px){
+    .planet-card {
+        width: 300px;
+    }
+    
+    .planet-img {
+        width: 160px;
+        height: 160px;
+    } 
+}
 
 @media only screen and (max-width: 680px){ 
     .image-text p{
@@ -442,13 +476,13 @@ footer{
 
     .planet-card {
         margin: 15px;
-        width: 200px;
+        width: 220px;
     }
     
     .planet-img {
         width: 150px;
         height: 150px;
-    }
+    } 
     
     .planet-name {
         font-size: 20px; 
