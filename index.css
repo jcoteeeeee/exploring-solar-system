@@ -132,7 +132,7 @@ nav{
     font-size: 25px; 
     padding: 10px; 
     margin: 10px; 
-} 
+}  
 
 #descrips{
     display: flex; 
@@ -147,7 +147,7 @@ nav{
     padding: 5px; 
     line-height: 2em; 
     font-size: var(--par-font-size); 
-} 
+}    
 
 /* planet bio   */
 #planet-bios{
@@ -209,18 +209,18 @@ footer{
     height: 80px; 
     position: relative;   
     bottom: 0px;    
-} 
+}   
 
 .footer-nav{
     display: flex; 
     justify-content: space-between; 
-}
+} 
 
 .footer-navlink{
     color: rgb(168, 164, 164); 
     font-size: 50px; 
     text-decoration: none; 
-} 
+}  
 
 .footer-navlink:hover{
     color: white; 
@@ -493,6 +493,17 @@ footer{
         font-size: 32px; 
     }    
 
+    #descrip-title{ 
+        font-size: 20px; 
+        padding: 10px; 
+        margin: 10px; 
+    }   
+
+    .descrip-par{  
+        --par-font-size: 16px; 
+        font-size: var(--par-font-size); 
+    }    
+
     .planet-card{
         margin: 13px; 
         width: 210px; 
@@ -512,7 +523,16 @@ footer{
         --par-font-size: 17px; 
         font-size: var(--par-font-size); 
         margin: 14px 7px;  
-    }   
+    }    
+
+    footer {
+        height: 60px;
+
+    }
+    
+    .footer-navlink {
+        font-size: 40px;
+    }  
 } 
 
 @media only screen and (max-width: 480px){ 
@@ -522,6 +542,17 @@ footer{
 
     .nav-link{
         font-size: 10px; 
+    }     
+
+    #descrip-title{ 
+        font-size: 16px; 
+        padding: 10px; 
+        margin: 10px; 
+    }   
+
+    .descrip-par{  
+        --par-font-size: 14px; 
+        font-size: var(--par-font-size); 
     }    
 
     .planet-card{
@@ -543,13 +574,45 @@ footer{
         --par-font-size: 14px; 
         font-size: var(--par-font-size); 
         margin: 10px 5px;  
-    }   
+    }    
+
+    footer {
+        height: 50px;
+
+    }
+    
+    .footer-navlink {
+        font-size: 35px;
+    }  
 }  
 
 /* Media queries for planet pages ____________________________________________*/ 
 
 /* This media query applies to all pages _____________________________________ */  
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1600px){ 
+    .logo{
+        font-size: 40px; 
+    }  
+
+    .nav-link{
+        font-size: 18px; 
+    }     
+
+    .image-text h1{
+        font-size: 60px; 
+    }
+
+    #descrip-title{ 
+        font-size: 30px; 
+        padding: 15px; 
+        margin: 15px; 
+    }   
+
+    .descrip-par{  
+        --par-font-size: 20px; 
+        font-size: var(--par-font-size); 
+    }    
+
     .planet-card {
         margin: 25px;
         width: 650px;
