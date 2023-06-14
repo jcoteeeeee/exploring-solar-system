@@ -278,7 +278,7 @@ footer{
     font-family: Calisto MT; 
     line-height: 2rem; 
     margin: 20px 10px; 
-} 
+}   
 
 .photo-gallery{
     /* background-color: rgb(228, 221, 221);  */
@@ -537,17 +537,45 @@ footer{
 
 /* Media queries for planet pages ____________________________________________*/ 
 @media only screen and (max-width: 1300px){
+    .planet-title{
+        font-size: 55px; 
+    } 
+
+    .info-title{
+        font-size: 22px; 
+    }   
+
+    .info-par{
+        font-size: var(--par-font-size); 
+    }   
+
     .gallery-img{
         height: 250px; 
         width: 250px; 
     }    
-}
+}  
 
 @media only screen and (max-width: 630px){
+    .planet-title{
+        font-size: 40px; 
+    }     
+
+    .info-title{  
+        font-size: 18px; 
+        padding: 5px; 
+        margin: 5px;        
+    }   
+
+    .info-par{ 
+        --par-font-size: 16px; 
+        font-size: var(--par-font-size); 
+        margin: 15px 7px; 
+    }   
+
     .gallery-img{
         height: 200px; 
         width: 200px; 
-    }   
+    }    
 } 
 
 /* These media quries applies to all pages _____________________________________ */  
@@ -602,7 +630,21 @@ footer{
         font-size: 35px;
     } 
 
-    /* Styling for planet pages */ 
+    /* Styling for planet pages */  
+    .planet-title{
+        font-size: 28px; 
+    }    
+
+    .info-title{  
+        font-size: 16px; 
+    }   
+
+    .info-par{ 
+        --par-font-size: 14px; 
+        font-size: var(--par-font-size); 
+        margin: 10px 5px; 
+    }   
+
     .gallery-img{
         height: 150px; 
         width: 150px; 
@@ -656,6 +698,18 @@ footer{
     } 
 
     /* Styling for planet pages */ 
+    .planet-title{
+        font-size: 70px; 
+    }
+
+    .info-title{  
+        font-size: 28px; 
+    }   
+
+    .info-par{ 
+        font-size: var(--par-font-size); 
+        margin: 10px 5px; 
+    }   
     .gallery-img{
         height: 360px; 
         width: 360px; 
