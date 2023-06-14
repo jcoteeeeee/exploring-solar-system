@@ -123,12 +123,15 @@ nav{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    background: linear-gradient(to bottom, rgb(0,0,10),rgb(2, 17, 89), rgb(147, 167, 236), rgb(2, 17, 89), rgb(0, 0, 10)); 
 } 
 
 #descrip-title{ 
-    color: var(--main-color); 
+    /* color: var(--main-color);  */ 
+    color: white; 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;    */  
-    font-family: Calisto MT; 
+    /* font-family: Calisto MT;  */ 
+    font-family: 'Space Mono', monospace, Calisto MT;
     font-size: 25px; 
     padding: 10px; 
     margin: 10px; 
@@ -140,9 +143,11 @@ nav{
 }  
 
 .descrip-par{  
-    color: var(--main-color); 
+    /* color: var(--main-color);  */ 
+    color: white; 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;  */  
-    font-family: Calisto MT; 
+    /* font-family: Calisto MT;  */ 
+    font-family: 'Space Mono', monospace, Calisto MT; 
     margin: 15px 10%; 
     padding: 5px; 
     line-height: 2em; 
@@ -189,7 +194,8 @@ nav{
     text-decoration: none; 
     font-size: 25px;   
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;  */  
-    font-family: Calisto MT; 
+    /* font-family: Calisto MT;  */ 
+    font-family: 'Space Mono', monospace, Calisto MT; 
     font-weight: bold; 
     margin: 10px; 
 }  
@@ -197,7 +203,8 @@ nav{
 .planet-par{
     font-size: var(--par-font-size); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;      */  
-    font-family: Calisto MT;   
+    /* font-family: Calisto MT;    */ 
+    font-family: 'Space Mono', monospace, Calisto MT;
     line-height: 1.5rem; 
     margin: 20px 10px; 
 }  
@@ -239,7 +246,7 @@ footer{
     font-size: 60px; 
     letter-spacing: .5rem; 
     /* font-family: Metropolis, Helvetica,Arial,sans-serif;   */ 
-    font-family: Calisto MT; 
+    font-family: Calisto MT;    
     text-shadow: 2px 2px black; 
 } 
 
@@ -255,7 +262,8 @@ footer{
 .info-title{
     color: var(--main-color); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;    */ 
-    font-family: Calisto MT; 
+    /* font-family: Calisto MT;  */ 
+    font-family: 'Space Mono', monospace, Calisto MT;  
     font-size: 25px; 
     padding: 10px; 
     margin: 10px;   
@@ -275,7 +283,8 @@ footer{
 .info-par{
     font-size: var(--par-font-size); 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;      */  
-    font-family: Calisto MT; 
+    /* font-family: Calisto MT;  */ 
+    font-family: 'Space Mono', monospace, Calisto MT; 
     line-height: 2rem; 
     margin: 20px 10px; 
 }   
