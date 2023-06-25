@@ -289,7 +289,7 @@ footer{
     margin: 20px 10px; 
 }   
 
-.photo-gallery{
+.image-gallery{
     /* background-color: rgb(228, 221, 221);  */
     background-image: url("./background-images/background-sky.jpg"); 
     /* background-size: cover;  */
@@ -299,7 +299,7 @@ footer{
     width: 100%; 
 } 
 
-.photo-gallery h1{ 
+.image-gallery h1{ 
     color: white; 
     font-size: 40px; 
     /* font-family: Metropolis, Helvetica, Arial, sans-serif;      */  
